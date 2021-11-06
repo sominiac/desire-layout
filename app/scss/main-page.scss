@@ -1,0 +1,258 @@
+.main-page {
+    &__about {
+        margin-bottom: 10.4rem;
+    }
+    &__gallery-item {
+        width: 35rem;
+        height: 35rem;
+        margin-right: 2.9rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__blog {
+        margin-bottom: 9.9rem;
+    }
+    &__blog-inner {}
+    &__blog-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    &__blog-title {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 5.1rem;
+        font-size: 3.6rem;
+        font-weight: bold;
+        color: #363838;
+    }
+    &__blog-main {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &__blog-item {
+        margin-right: 3.1rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__blog-item-image {
+        margin-bottom: 2rem;
+    }
+    &__blog-item-metadata {
+        margin-bottom: 1rem;
+    }
+    &__social-media {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 18.8rem;
+        margin-left: 8.2rem;
+    }
+    &__social-network {
+        margin-bottom: 1.5rem;
+    }
+    &__social-link {
+        background-position: left;
+        padding-left: 2.8rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 2.8rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #707070;
+    }
+}
+
+.call-to-action {
+    background-image: url(../assets/images/main-page/call-to-action.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 7.3rem;
+    &__inner {
+        min-height: 61.6rem;
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        font-family: "Montserrat", sans-serif;
+        line-height: 8rem;
+        font-weight: bold;
+        font-size: 6rem;
+        color: #363838;
+    }
+    &__line {
+        width: 20rem;
+        margin: 2.2rem 0;
+    }
+    &__text {
+        font-family: "Open Sans", sans-serif;
+        line-height: 2.8rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #5a5a5a;
+    }
+}
+
+.how-it-works {
+    margin-bottom: 11.4rem;
+    &__header {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 5.1rem;
+        font-size: 3.6rem;
+        font-weight: bold;
+        color: #363838;
+    }
+    &__info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
+        position: relative;
+        &::after {
+            content: "";
+            width: 1rem;
+            height: 1rem;
+            background-color: #363838;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+        &::before {
+            content: "";
+            width: 100%;
+            height: .2rem;
+            background-color: #979797;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+    &__item {
+        background-color: #fff;
+        position: relative;
+        &:nth-child(1) {
+            min-width: 29rem;
+        }
+        &:nth-child(2) {
+            grid-column-start: 3;
+            grid-column-end: 3;
+            &::after {
+                content: "";
+                width: 0.2rem;
+                height: 2rem;
+                background-color: #979797;
+                position: absolute;
+                bottom: -.5rem;
+                left: 0;
+            }
+        }
+        &:nth-child(3) {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            padding-top: 4rem;
+            &::after {
+                content: "";
+                width: 0.2rem;
+                height: 2rem;
+                background-color: #979797;
+                position: absolute;
+                top: -.5rem;
+                left: 0;
+            }
+        }
+    }
+    &__item-header {
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 5.1rem;
+        margin-bottom: 1.4rem;
+        &_1 {
+            min-height: 4.1rem;
+            background-image: url(../assets/icons/main-page/1.svg);
+        }
+        &_2 {
+            min-height: 3.4rem;
+            background-image: url(../assets/icons/main-page/3.svg);
+        }
+        &_3 {
+            min-height: 2.7rem;
+            background-image: url(../assets/icons/main-page/2.svg);
+        }
+    }
+    &__item-title {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 2.3rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #363838;
+    }
+    &__item-text {
+        font-family: 'Open Sans', sans-serif;
+        line-height: 2.7rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #5A5A5A;
+    }
+}
+
+.slider {
+    margin-bottom: 8.9rem;
+    position: relative;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 72.2rem;
+        background-image: url(../assets/images/main-page/slider/slider-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__inner {
+        min-height: 86rem;
+        max-height: 86rem;
+        position: relative;
+    }
+    &__pictures {
+        position: absolute;
+        left: -23.3rem;
+    }
+    &__info {
+        position: absolute;
+        top: 17.4rem;
+        right: 5.5rem;
+    }
+    &__title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 11rem;
+        color: #363838;
+    }
+    &__line {
+        width: 18.5rem;
+        margin: 2.6rem 0;
+    }
+    &__text {
+        font-family: "Open Sans", sans-serif;
+        line-height: 2.7rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: #5a5a5a;
+    }
+    &__triggers {
+        position: absolute;
+        left: 50%;
+        bottom: 4.7rem;
+        transform: translateX(calc(-50% + 1rem));
+    }
+}

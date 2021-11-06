@@ -1,0 +1,87 @@
+.about {
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5.1rem;
+    }
+    &__title {
+        font-family: "Montserrat", sans-serif;
+        line-height: 5.1rem;
+        font-weight: bold;
+        font-size: 3.6rem;
+        color: #363838;
+    }
+    &__line {
+        width: 25.2rem;
+        margin: 2.5rem 0;
+    }
+    &__text {
+        font-family: "Open Sans", sans-serif;
+        line-height: 2.7rem;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #5a5a5a;
+    }
+    &__gallery {
+        display: flex;
+        justify-content: center;
+        padding: 0 2.6rem;
+    }
+    &__gallery-item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        &:hover .about__gallery-info {
+            opacity: 1;
+        }
+    }
+    &__gallery-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__gallery-info {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+        opacity: 0;
+        transition: opacity .4s ease;
+        position: relative;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, .7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    }
+    &__gallery-title {
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        color: #363838;
+        z-index: 1;
+    }
+    &__gallery-line {
+        width: 20rem;
+        margin: 1.9rem 0;
+        z-index: 1;
+    }
+    &__gallery-text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: #707070;
+        z-index: 1;
+    }
+}

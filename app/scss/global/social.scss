@@ -1,0 +1,32 @@
+.social {
+    &__media {
+        display: flex;
+        align-items: center;
+    }
+    &__network {
+        cursor: pointer;
+    }
+    &__link {
+        display: block;
+        background-repeat: no-repeat;
+        color: inherit;
+    }
+    &__link_facebook {
+        background-image: url(../assets/icons/social/Facebook.svg);
+    }
+    &__link_instagram {
+        background-image: url(../assets/icons/social/Instagram.svg);
+    }
+    &__link_pinterest {
+        background-image: url(../assets/icons/social/Pinterest.svg);
+    }
+    &__link_whatsapp {
+        background-image: url(../assets/icons/social/Whatsapp.svg);
+    }
+    &__link_twitter {
+        background-image: url(../assets/icons/social/Twitter.svg);
+    }
+    &__link_youtube {
+        background-image: url(../assets/icons/social/youtube.svg);
+    }
+}

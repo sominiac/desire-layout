@@ -1,0 +1,25 @@
+.gallery {
+    &__page-path {
+        margin-bottom: 8.3rem;
+    }
+    &__gallery {
+        margin-bottom: 14.8rem;
+        .gallery__photos {
+            margin-bottom: 2.6rem;
+        }
+        .gallery__photos:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__photos_reverse {
+        grid-template-columns: 49.3rem 49.2rem 81.2rem;
+        .gallery__image:first-child {
+            grid-row-end: 1;
+        }
+        .gallery__image:last-child {
+            grid-column-start: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    }
+}
